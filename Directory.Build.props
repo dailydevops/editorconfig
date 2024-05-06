@@ -20,6 +20,7 @@
     <PackageTags>editorconfig;standards;netevolve</PackageTags>
 
     <CopyrightYearStart>2024</CopyrightYearStart>
+    <DevelopmentDependency>true</DevelopmentDependency>
   </PropertyGroup>
 
 </Project>
