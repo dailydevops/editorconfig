@@ -9,4 +9,18 @@
   <Import Project="$(DirEngineeringSettings)src.build.props" Condition=" '$(IsTestableProject)' != 'true' " />
   <Import Project="$(DirEngineeringSettings)tests.build.props" Condition=" '$(IsTestableProject)' == 'true' " />
 
+  <PropertyGroup>
+    <Title>$(MSBuildProjectName)</Title>
+
+    <Description>NuGet package for uniform distribution and use of settings based on `.editorconfig` and other configuration mechanisms.</Description>
+
+    <RepositoryUrl>https://github.com/samtrion/editorconfig.git</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/samtrion/editorconfig.git</PackageProjectUrl>
+
+    <PackageTags>editorconfig;standards;netevolve</PackageTags>
+
+    <CopyrightYearStart>2024</CopyrightYearStart>
+    <DevelopmentDependency>true</DevelopmentDependency>
+  </PropertyGroup>
+
 </Project>

@@ -23,9 +23,9 @@ jobs:
     name: Build & Tests
     uses: dailydevops/pipelines/.github/workflows/cicd-dotnet.yml@0.9.3
     with:
-      disablePublish: true
+      disableCodeFormat: true
+      disableCodeQL: true
+      disableCoverageUpload: true
       dotnet-logging: ${{ inputs.dotnet-logging }}
-      dotnet-version: |
-        7.x
       solution: ./NetEvolve.EditorConfig.sln
     secrets: inherit
